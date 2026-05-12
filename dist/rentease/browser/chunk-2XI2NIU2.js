@@ -1,0 +1,1 @@
+import{Da as t}from"./chunk-YHZHNMZR.js";var n=class r{transform(e){return new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(e)}static \u0275fac=function(i){return new(i||r)};static \u0275pipe=t({name:"inr",type:r,pure:!0})};export{n as a};

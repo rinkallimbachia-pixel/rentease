@@ -1,0 +1,15 @@
+<section class="page-card">
+  <h1>How RentEase Works</h1>
+  <p>Simple and smooth rental lifecycle from selection to return.</p>
+
+  <div class="steps">
+    @for (step of steps; track step; let i = $index) {
+      <article>
+        <span>0{{ i + 1 }}</span>
+        <p>{{ step }}</p>
+      </article>
+    }
+  </div>
+
+  <a routerLink="/support">Need help understanding the process?</a>
+</section>

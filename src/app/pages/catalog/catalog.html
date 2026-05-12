@@ -1,0 +1,20 @@
+<section class="page-card">
+  <h1>Product Catalog</h1>
+  <p class="subtitle">Browse furniture and appliances with monthly rental and deposit details.</p>
+
+  <div class="grid">
+    @for (item of products; track item.name) {
+      <article>
+        <img
+          [src]="item.category === 'Furniture' ? 'assets/category-furniture.svg' : 'assets/category-appliance.svg'"
+          [alt]="item.category + ' image'"
+        />
+        <span>{{ item.category }}</span>
+        <h3>{{ item.name }}</h3>
+        <p>Monthly Rent: <strong>{{ item.rent }}</strong></p>
+        <p>Security Deposit: {{ item.deposit }}</p>
+        <a routerLink="/plans">Choose Plan</a>
+      </article>
+    }
+  </div>
+</section>

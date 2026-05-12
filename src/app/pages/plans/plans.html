@@ -1,0 +1,16 @@
+<section class="page-card">
+  <h1>Rental Plans</h1>
+  <p class="subtitle">Flexible tenure options designed for every lifestyle.</p>
+
+  <div class="grid">
+    @for (plan of plans; track plan.title) {
+      <article>
+        <h3>{{ plan.title }}</h3>
+        <p><strong>{{ plan.amount }}</strong></p>
+        <p>Tenure: {{ plan.tenure }}</p>
+        <p>Best for: {{ plan.bestFor }}</p>
+        <a routerLink="/contact">Book This Plan</a>
+      </article>
+    }
+  </div>
+</section>

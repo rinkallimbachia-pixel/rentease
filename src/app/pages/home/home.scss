@@ -1,0 +1,137 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.tag {
+  margin: 0 0 0.8rem;
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+}
+
+.subtitle {
+  color: #475569;
+  max-width: 60ch;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.actions a {
+  text-decoration: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 24px -16px #2563eb;
+}
+
+.actions a:hover {
+  transform: translateY(-1px);
+}
+
+.actions .ghost {
+  background: #e2e8f0;
+  color: #0f172a;
+  box-shadow: none;
+}
+
+.highlight ul {
+  padding-left: 1.1rem;
+  color: #334155;
+}
+
+.highlight img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+  border: 1px solid #dbeafe;
+}
+
+.floating {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.icon-row {
+  margin-top: 0.95rem;
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.icon-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #f8fafc;
+  border: 1px solid #dbe3ef;
+  border-radius: 999px;
+  padding: 0.34rem 0.65rem;
+  font-size: 0.84rem;
+  color: #334155;
+}
+
+.icon-row i {
+  font-style: normal;
+}
+
+.metrics {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.metrics h3 {
+  margin: 0;
+}
+
+.metrics p {
+  margin: 0.4rem 0 0;
+  color: #64748b;
+}
+
+.metrics article {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
