@@ -1,0 +1,13 @@
+<svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="4" width="48" height="48" rx="12" fill="url(#paint0_linear)"/>
+  <path d="M16 36V20H26.5C30.1 20 32 21.9 32 24.8C32 27 30.6 28.5 28.8 29.1L32.8 36H28.9L25.3 29.8H19.6V36H16ZM19.6 26.8H26C27.5 26.8 28.4 26.1 28.4 24.9C28.4 23.8 27.6 23 26 23H19.6V26.8Z" fill="white"/>
+  <text x="62" y="28" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Rent</text>
+  <text x="111" y="28" fill="#2563EB" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Ease</text>
+  <text x="62" y="45" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1">FURNITURE RENTAL</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="2" y1="4" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+</svg>
